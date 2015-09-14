@@ -1,15 +1,15 @@
 if [ -f /home/share/Modules/global/profile.modules ]
 then
-	. /home/share/Modules/global/profile.modules
+    . /home/share/Modules/global/profile.modules
 # put your own module loads here
-	module load lsf
+    module load lsf
         module load gcc/4.8.1 
 fi
 # .bash_profile
 
 # Get the aliases and functions
 if [ -f ~/.bashrc ]; then
-	. ~/.bashrc
+    . ~/.bashrc
 fi
 
 # User specific environment and startup programs
@@ -26,4 +26,3 @@ export PATH
 # ATM added during October setup
 export PYTHONPATH
 export ANTSPATH
-
