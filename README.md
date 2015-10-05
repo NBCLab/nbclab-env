@@ -9,45 +9,45 @@ Environment Setup
 ## 2. [Set up](https://help.github.com/articles/set-up-git/) Git on HPC
 Perform steps 2-4 in **Setting up Git**.
 
-3. Setup your ssh `key <https://help.github.com/articles/generating-ssh-keys/>`__! Follow steps 1 & 2 in 'github:help'
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-```shell
+## 3. Set up your ssh (key)[https://help.github.com/articles/generating-ssh-keys/]!
+Follow steps 1 & 2 in 'github:help'
+
+```bash
 cat ~/.ssh/id\_dsa.pub
 ```
 or
 
-**>>> cat ~/.ssh/id\_rsa.pub**
-
+```bash
+cat ~/.ssh/id\_rsa.pub
+```
 copy the key to your github account settings --> SSH Keys --> add SSH
 key
 
-4. Fork the `madlab\_env <https://github.com/mattfeld/madlab_env>`__ repository. Then in a terminal:
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## 4. Fork the (nbclab-env)[https://github.com/mattfeld/madlab_env] repository.
+In a terminal:
 
-**>>> cd place/to/keep/repository**
+```bash
+cd place/to/keep/repository
+git clone git@github.com/your_user_name/nbclab-env.git
+cd nbclab-env
+git remote add upstream https://github.com/mattfeld/madlab\_env.git**
+```
 
-**>>> git clone git@github.com/your\_user\_name/madlab\_env.git**
+## 5. Set up symlinks to the repository in your home folder
 
-**>>> cd madlab\_env**
+```bash
+cd /place/of/repository
+python setup.py
+```
 
-**>>> git remote add upstream
-https://github.com/mattfeld/madlab\_env.git**
+## 6. Make sure you have a symlinked .bash\_profile and .bashrc
 
-5. Set up symlinks to the repository in your home folder
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+```bash
+cd
+ls -la
+```
 
-**>>> cd /place/of/repository**
-
-**>>> python setup.py**
-
-6. Make sure you have a symlinked .bash\_profile and .bashrc
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**>>> cd**
-
-**>>> ls -la**
-
-7. Modify your ~/.ssh/config file
+## 7. Modify your ~/.ssh/config file
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 Test if SSH over the HTTPS port is possible, run this SSH command:
@@ -69,8 +69,7 @@ Host github.com
 
  Port 443
 
-Examples
-========
+## Examples
 
 Set your project environment to the CMIND project:
 
@@ -102,20 +101,17 @@ in the example) in the madlab\_env repository folder. Then edit the
 
 Commit and push the file up to your repository
 
-**>>> cd /place/of/madlab\_env/repo**
-
-**>>> git add .env/.my\_project\_environment**
-
-**>>> git add .projects**
-
-**>>> git commit -m "added my project's environment"**
-
-**>>> git push origin master**
-
+```bash
+cd /place/of/madlab\_env/repo
+git add .env/.my\_project\_environment
+git add .projects
+git commit -m "added my project's environment"
+git push origin master
+```
 Test and send a pull request to mattfeld/madlab\_env for someone else to
 review and merge your changes.
 
-GIT Tutorials
+# GIT Tutorials
 =============
 
 Here are some great GIT tutorials:
