@@ -10,7 +10,7 @@ Environment Setup
 Perform steps 2-4 in **Setting up Git**.
 
 ### 3. Set up your ssh [key](https://help.github.com/articles/generating-ssh-keys/)!
-1. Follow steps 1 & 2 in 'github:help'.
+- Follow steps 1 & 2 in 'github:help'.
 
 ```bash
 cat ~/.ssh/id_dsa.pub
@@ -22,10 +22,10 @@ or
 cat ~/.ssh/id_rsa.pub
 ```
 
-2. Copy the key to your github account settings --> SSH Keys --> add SSH key
+ - Copy the key to your github account settings --> SSH Keys --> add SSH key
 
 ### 4. Fork the [nbclab-env](https://github.com/mattfeld/madlab_env) repository.
-1. In a terminal:
+- In a terminal:
 
 ```bash
 cd place/to/keep/repository
@@ -35,21 +35,21 @@ git remote add upstream https://github.com/nbclab/nbclab-env.git**
 ```
 
 ### 5. Set up symlinks to the repository in your home folder
-1. In a terminal:
+- In a terminal:
 ```bash
 cd /place/of/repository
 python setup.py
 ```
 
 ### 6. Make sure you have a symlinked .bash_profile and .bashrc
-1. In a terminal:
+- In a terminal:
 ```bash
 cd
 ls -la
 ```
 
 ### 7. Modify your ~/.ssh/config file
-1. Test if SSH over the HTTPS port is possible. Run this SSH command:
+ 1. Test if SSH over the HTTPS port is possible. Run this SSH command:
 
 ```bash
 ssh -T -p 443 git@ssh.github.com
@@ -59,7 +59,7 @@ You should see:
 
 > Hi username! You've successfully authenticated, but GitHub does not provide shell access.
 
-2. Enable SSH connections over HTTPS
+- Enable SSH connections over HTTPS
 
 ```bash
 vi ~/.ssh/config
