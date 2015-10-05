@@ -1,21 +1,19 @@
-
-MadLab
+NBCLab Environment Setup
 ======
 
 Environment Setup
 -----------------
 
-1. First get a `github <https://github.com/>`__ account
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## 1. Get a (Github)[https://github.com/] account
 
-2. `Setup <https://help.github.com/articles/set-up-git/>`__ git on HPC
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+## 2. [Set up](https://help.github.com/articles/set-up-git/) Git on HPC
+Perform steps 2-4 in **Setting up Git**.
 
 3. Setup your ssh `key <https://help.github.com/articles/generating-ssh-keys/>`__! Follow steps 1 & 2 in 'github:help'
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-**>>> cat ~/.ssh/id\_dsa.pub**
-
+```shell
+cat ~/.ssh/id\_dsa.pub
+```
 or
 
 **>>> cat ~/.ssh/id\_rsa.pub**
