@@ -29,9 +29,9 @@ cat ~/.ssh/id_rsa.pub
 
 ```bash
 cd place/to/keep/repository
-git clone git@github.com/your_user_name/nbclab-env.git
+git clone https://github.com/nbclab/nbclab-env.git
 cd nbclab-env
-git remote add upstream https://github.com/nbclab/nbclab-env.git**
+git remote add upstream https://github.com/nbclab/nbclab-env.git
 ```
 
 ### 5. Set up symlinks to the repository in your home folder
