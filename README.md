@@ -13,13 +13,13 @@ Perform steps 2-4 in **Setting up Git**.
 1. Follow steps 1 & 2 in 'github:help'.
 
 ```bash
-cat ~/.ssh/id\_dsa.pub
+cat ~/.ssh/id_dsa.pub
 ```
 
 or
 
 ```bash
-cat ~/.ssh/id\_rsa.pub
+cat ~/.ssh/id_rsa.pub
 ```
 
 2. Copy the key to your github account settings --> SSH Keys --> add SSH key
@@ -31,7 +31,7 @@ cat ~/.ssh/id\_rsa.pub
 cd place/to/keep/repository
 git clone git@github.com/your_user_name/nbclab-env.git
 cd nbclab-env
-git remote add upstream https://github.com/mattfeld/madlab\_env.git**
+git remote add upstream https://github.com/nbclab/nbclab-env.git**
 ```
 
 ### 5. Set up symlinks to the repository in your home folder
@@ -86,13 +86,13 @@ git fetch upstream
 git merge upstream/master
 ```
 
-To add an environment to the madlab_env repository, make a separate environment shell script in the .env (called .my_project_environment in the example) in the madlab_env repository folder. Then edit the .projects file to add a function:
+To add an environment to the nbclab-env repository, make a separate environment shell script in the .env (called .my_project_environment in the example) in the nbclab-env repository folder. Then edit the .projects file to add a function:
 
 ```bash
-function my\_project\_env()
+function my_project_env()
 {
   
-source ~/.env/.my\_project\_environment
+source ~/.env/.my_project_environment
   
 }
 ```
@@ -100,13 +100,13 @@ source ~/.env/.my\_project\_environment
 Commit and push the file up to your repository
 
 ```bash
-cd /place/of/madlab\_env/repo
+cd /place/of/nbclab-env/repo
 git add .env/.my_project_environment
 git add .projects
 git commit -m "added my project's environment"
 git push origin master
 ```
-Test and send a pull request to mattfeld/madlab_env for someone else to review and merge your changes.
+Test and send a pull request to nbclab/nbclab-env for someone else to review and merge your changes.
 
 ## GIT Tutorials
 Here are some great GIT tutorials:  
