@@ -2,7 +2,7 @@
 
 function adhd_env()
 {
-source /home/data/nbc/adhd/adhd/.env/.environment
+source /home/data/nbc/adhd/adhd/.env/bash_environment
 }
 
 function cmind_env()
