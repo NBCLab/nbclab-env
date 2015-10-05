@@ -65,10 +65,10 @@ You should see:
 vi ~/.ssh/config
 ```
 
-  - Add the following lines:
-Host github.com  
-Hostname ssh.github.com  
-Port 443  
+  - Add the following lines:  
+> Host github.com  
+> Hostname ssh.github.com  
+> Port 443  
 
 ## Examples
 
