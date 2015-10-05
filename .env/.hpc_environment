@@ -8,7 +8,7 @@ module add matlab/2013b/front
 module add mricron/6-2013
 module add miniconda/2.7
 module add afni/openmp
-source /home/applications/fsl/5.0.7/etc/fslconf/fsl.sh #This will setup my $FSLDIR
+source /home/applications/fsl/5.0.7/etc/fslconf/fsl.sh #This will set up my $FSLDIR
 
 # Set up project specific python environment
 source activate /home/data/madlab/envs/hpc_fiu_env
