@@ -101,7 +101,7 @@ Commit and push the file up to your repository
 
 ```bash
 cd /place/of/madlab\_env/repo
-git add .env/.my\_project\_environment
+git add .env/.my_project_environment
 git add .projects
 git commit -m "added my project's environment"
 git push origin master
