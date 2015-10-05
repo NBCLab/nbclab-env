@@ -108,8 +108,7 @@ git push origin master
 ```
 Test and send a pull request to mattfeld/madlab_env for someone else to review and merge your changes.
 
-# GIT Tutorials
-Here are some great GIT tutorials:
-
-[First tutorial](http://nyuccl.org/pages/gittutorial/)  
-[Second tutorial](http://nbviewer.ipython.org/github/fperez/reprosw/blob/master/Version%20Control.ipynb)  
+## GIT Tutorials
+Here are some great GIT tutorials:  
+- [First tutorial](http://nyuccl.org/pages/gittutorial/)  
+- [Second tutorial](http://nbviewer.ipython.org/github/fperez/reprosw/blob/master/Version%20Control.ipynb)  
