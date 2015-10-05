@@ -1,8 +1,8 @@
 #! /bin/bash
 
-function hcp_env()
+function adhd_env()
 {
-source /home/data/madlab/envs/.env/.hcp_environment
+source /home/data/nbc/adhd/adhd/.env/.environment
 }
 
 function cmind_env()
