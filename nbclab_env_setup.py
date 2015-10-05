@@ -1,3 +1,7 @@
+"""
+Copy of Dr. Aaron Mattfeld's madlab_env_setup.py for NBCLab use.
+"""
+
 import os
 import time
 
@@ -16,4 +20,3 @@ for f in files:
 
 if not os.path.exists(os.path.expanduser('~/.custom_env')):
     os.system('touch ~/.custom_env')
-
