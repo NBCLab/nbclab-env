@@ -2,26 +2,11 @@
 
 function adhd_env()
 {
-source /home/data/nbc/adhd/adhd/.env/bash_environment
+source /home/data/nbc/adhd/adhd/envs/bash_environment
 }
 
-function cmind_env()
+function leave_env()
 {
-source /home/data/madlab/envs/.env/.cmind_environment
+source deactivate
+unset project_name
 }
-
-function adhd200_env()
-{
-source /home/data/madlab/envs/.env/.adhd200_environment
-}
-
-function tol_env()
-{
-source /home/data/madlab/envs/.env/.tolerance_environment
-}
-
-function wmaze_env()
-{
-source /home/data/madlab/envs/.env/.wmaze_environment
-}
-
