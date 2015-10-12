@@ -37,13 +37,13 @@ git remote add upstream https://github.com/nbclab/nbclab-env.git
 ### 5. Symlink .projects to your home directory
 - In a terminal:
 ```bash
-ln -s /place/of/repository/.projects /your/home/dir/
+ln -s /place/of/repository/.projects ~/
 ```
 
 ### 6. Modify .bashrc to source .projects and show environment name
 - Add in:
 ```bash
-source /your/home/dir/.projects
+source ~/.projects
 
 prompt1="\[\e[1;39m\]\u@\h:\W\$\[\e[0m\]"
 PROMPT_COMMAND='PS1="\[\e[1;37m\e[44m\]${project_name}\[\e[0;0m\]${prompt1} "'
@@ -93,7 +93,7 @@ To add an environment to the nbclab-env repository, make a separate environment 
 function my_project_env()
 {
   
-source ~/.env/.my_project_environment
+source /place/of/project/envs/bash_environment
   
 }
 ```
