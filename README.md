@@ -24,7 +24,7 @@ cat ~/.ssh/id_rsa.pub
 
  - Copy the key to your github account settings --> SSH Keys --> add SSH key
 
-### 4. Fork the [nbclab-env](https://github.com/mattfeld/madlab_env) repository.
+### 4. Fork the [nbclab-env](https://github.com/NBCLab/nbclab-env) repository.
 - In a terminal:
 
 ```bash
@@ -34,18 +34,19 @@ cd nbclab-env
 git remote add upstream https://github.com/nbclab/nbclab-env.git
 ```
 
-### 5. Set up symlinks to the repository in your home folder
+### 5. Symlink .projects to your home directory
 - In a terminal:
 ```bash
-cd /place/of/repository
-python setup.py
+ln -s /place/of/repository/.projects /your/home/dir/
 ```
 
-### 6. Make sure you have a symlinked .bash_profile and .bashrc
-- In a terminal:
+### 6. Modify .bashrc to source .projects and show environment name
+- Add in:
 ```bash
-cd
-ls -la
+source /your/home/dir/.projects
+
+prompt1="\[\e[1;39m\]\u@\h:\W\$\[\e[0m\]"
+PROMPT_COMMAND='PS1="\[\e[1;37m\e[44m\]${project_name}\[\e[0;0m\]${prompt1} "'
 ```
 
 ### 7. Modify your ~/.ssh/config file
@@ -72,13 +73,13 @@ Add the following lines:
 
 ## Examples
 
-Set your project environment to the CMIND project:
+Set your project environment to the ADHD project:
 
 ```bash
-cmind_env
+adhd_env
 ```
 
-You should see your prompt say "CMIND." Create a pointer to the madlab_env repository for the latest project environments:
+You should see your prompt say "[ADHD]". Create a pointer to the madlab_env repository for the latest project environments:
 
 ```bash
 cd /place/of/repository
