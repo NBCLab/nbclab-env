@@ -6,4 +6,3 @@ pip install nibabel
 pip install https://github.com/nipy/nipy/archive/master.zip
 pip install https://github.com/nipy/nipype/archive/master.zip
 pip install https://github.com/moloney/dcmstack/archive/master.zip
-#conda remove --features mkl
