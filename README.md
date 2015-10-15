@@ -10,6 +10,7 @@ Environment Setup
 Perform steps 2-4 in **Setting up Git**.
 
 ### 3. Set up your ssh [key](https://help.github.com/articles/generating-ssh-keys/)!
+- Remember to make your passkey easy to remember (you will be typing it a lot)
 - Follow steps 1 & 2 in 'github:help'.
 
 ```bash
@@ -23,7 +24,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 
  - Copy the key to your github account settings --> SSH Keys --> add SSH key
-### 4. Modify your ~/.ssh/config file
+### 4. Modify your ~/.ssh/config file using nano
  1. Test if SSH over the HTTPS port is possible. Run this SSH command:
 
 ```bash
@@ -46,7 +47,7 @@ Add the following lines:
 > Port 443  
 
 ### 5. Fork the [nbclab-env](https://github.com/NBCLab/nbclab-env) repository.
-- In a terminal:
+- In a terminal: 
 
 ```bash
 cd place/to/keep/repository
@@ -55,13 +56,20 @@ cd nbclab-env
 git remote add upstream https://github.com/nbclab/nbclab-env.git
 ```
 
-### 6. Symlink .projects to your home directory
+### 6. Change repo configuration to ssh
+- Open .git/config
+- find url= entry under section [remote "origin"]
+- Change it from url=https://github.com/nbclab/nbclab-env.git
+to ssh://git@github.com/nbclab/nbclab-env.git
+
+
+### 7. Symlink .projects to your home directory
 - In a terminal:
 ```bash
 ln -s /place/of/repository/.projects ~/
 ```
 
-### 7. Modify .bashrc to source .projects and show environment name
+### 8. Modify .bashrc to source .projects and show environment name
 - Add in:
 ```bash
 source ~/.projects
