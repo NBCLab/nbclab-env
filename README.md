@@ -23,33 +23,7 @@ cat ~/.ssh/id_rsa.pub
 ```
 
  - Copy the key to your github account settings --> SSH Keys --> add SSH key
-
-### 4. Fork the [nbclab-env](https://github.com/NBCLab/nbclab-env) repository.
-- In a terminal:
-
-```bash
-cd place/to/keep/repository
-git clone https://github.com/nbclab/nbclab-env.git
-cd nbclab-env
-git remote add upstream https://github.com/nbclab/nbclab-env.git
-```
-
-### 5. Symlink .projects to your home directory
-- In a terminal:
-```bash
-ln -s /place/of/repository/.projects ~/
-```
-
-### 6. Modify .bashrc to source .projects and show environment name
-- Add in:
-```bash
-source ~/.projects
-
-prompt1="\[\e[1;39m\]\u@\h:\W\$\[\e[0m\]"
-PROMPT_COMMAND='PS1="\[\e[1;37m\e[44m\]${project_name}\[\e[0;0m\]${prompt1} "'
-```
-
-### 7. Modify your ~/.ssh/config file
+### 4. Modify your ~/.ssh/config file
  1. Test if SSH over the HTTPS port is possible. Run this SSH command:
 
 ```bash
@@ -63,13 +37,39 @@ You should see:
 - Enable SSH connections over HTTPS
 
 ```bash
-vi ~/.ssh/config
+nano ~/.ssh/config
 ```
 
 Add the following lines:  
 > Host github.com  
 > Hostname ssh.github.com  
 > Port 443  
+### 5. Fork the [nbclab-env](https://github.com/NBCLab/nbclab-env) repository.
+- In a terminal:
+
+```bash
+cd place/to/keep/repository
+git clone https://github.com/nbclab/nbclab-env.git
+cd nbclab-env
+git remote add upstream https://github.com/nbclab/nbclab-env.git
+```
+
+### 6. Symlink .projects to your home directory
+- In a terminal:
+```bash
+ln -s /place/of/repository/.projects ~/
+```
+
+### 7. Modify .bashrc to source .projects and show environment name
+- Add in:
+```bash
+source ~/.projects
+
+prompt1="\[\e[1;39m\]\u@\h:\W\$\[\e[0m\]"
+PROMPT_COMMAND='PS1="\[\e[1;37m\e[44m\]${project_name}\[\e[0;0m\]${prompt1} "'
+```
+
+
 
 ## Examples
 
