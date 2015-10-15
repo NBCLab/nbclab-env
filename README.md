@@ -44,6 +44,7 @@ Add the following lines:
 > Host github.com  
 > Hostname ssh.github.com  
 > Port 443  
+
 ### 5. Fork the [nbclab-env](https://github.com/NBCLab/nbclab-env) repository.
 - In a terminal:
 
