@@ -5,6 +5,11 @@ function adhd_env()
 source /home/data/nbc/adhd/adhd/envs/bash_environment
 }
 
+function athena_env()
+{
+source ~/Athena/envs/bash_environment
+}
+
 function leave_env()
 {
 source deactivate
