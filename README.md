@@ -51,9 +51,9 @@ Add the following lines:
 
 ```bash
 cd place/to/keep/repository
-git clone https://github.com/nbclab/nbclab-env.git
+git clone ssh://git@github.com/nbclab/nbclab-env.git
 cd nbclab-env
-git remote add upstream https://github.com/nbclab/nbclab-env.git
+git remote add upstream ssh://git@github.com/nbclab/nbclab-env.git
 ```
 
 ### 6. Change repo configuration to ssh
