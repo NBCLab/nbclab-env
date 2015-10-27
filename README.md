@@ -96,16 +96,24 @@ git fetch upstream
 git merge upstream/master
 ```
 
-### 2. Add an environment to nbclab-env
+### 2. Create a new environment
+
+1. Create environment folder in project folder (e.g. /home/data/nbc/adhd/adhd/**envs**/).
+2. Copy example bash_environment from nbclab-env folder to project environment folder.
+3. Edit bash_environment with project-specific settings (specify versions of FSL, AFNI, SPM, etc.). Make sure it source activates the right miniconda environment (which you'll set up in the next step).
+4. Copy example generate_miniconda_env.sh to project environment folder.
+5. Edit generate_miniconda_env.sh with project-specific settings (specify which Python modules you'll need and which version of each). Also make sure paths point to project environment folder.
+6. Run generate_miniconda_env.sh.
+7. You should now have Python and bash environments for your project! Now just add the necessary info to the nbclab-env repository so everyone can use them (via .projects).
+
+### 3. Add an environment to nbclab-env
 
 - To add an environment to the nbclab-env repository, make a separate environment shell script in the .env (called .my_project_environment in the example) in the nbclab-env repository folder. Then edit the .projects file to add a function:
 
 ```bash
 function my_project_env()
 {
-  
 source /place/of/project/envs/bash_environment
-  
 }
 ```
 
