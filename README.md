@@ -82,13 +82,13 @@ PROMPT_COMMAND='PS1="\[\e[1;37m\e[44m\]${project_name}\[\e[0;0m\]${prompt1} "'
 
 ## Examples
 
-Set your project environment to the ADHD project:
+### 1. Set your project environment to the ADHD project:
 
 ```bash
 adhd_env
 ```
 
-You should see your prompt say "[ADHD]". Create a pointer to the madlab_env repository for the latest project environments:
+You should see your prompt say "[ADHD]". Create a pointer to the nbclab-env repository for the latest project environments:
 
 ```bash
 cd /place/of/repository
@@ -96,7 +96,9 @@ git fetch upstream
 git merge upstream/master
 ```
 
-To add an environment to the nbclab-env repository, make a separate environment shell script in the .env (called .my_project_environment in the example) in the nbclab-env repository folder. Then edit the .projects file to add a function:
+### 2. Add an environment to nbclab-env
+
+- To add an environment to the nbclab-env repository, make a separate environment shell script in the .env (called .my_project_environment in the example) in the nbclab-env repository folder. Then edit the .projects file to add a function:
 
 ```bash
 function my_project_env()
@@ -107,7 +109,7 @@ source /place/of/project/envs/bash_environment
 }
 ```
 
-Commit and push the file up to your repository
+- Commit and push the file up to your repository
 
 ```bash
 cd /place/of/nbclab-env/repo
@@ -116,9 +118,13 @@ git add .projects
 git commit -m "added my project's environment"
 git push origin master
 ```
-Test and send a pull request to nbclab/nbclab-env for someone else to review and merge your changes.
+
+- Test and send a pull request to nbclab/nbclab-env for someone else to review and merge your changes.
+
+
 
 ## GIT Tutorials
 Here are some great GIT tutorials:  
-- [First tutorial](http://nyuccl.org/pages/gittutorial/)  
-- [Second tutorial](http://nbviewer.ipython.org/github/fperez/reprosw/blob/master/Version%20Control.ipynb)  
+- [NYUCCL](http://nyuccl.org/pages/gittutorial/)  
+- [FPerez](http://nbviewer.ipython.org/github/fperez/reprosw/blob/master/Version%20Control.ipynb)
+- [Codecademy](https://www.codecademy.com/learn) (interactive)
