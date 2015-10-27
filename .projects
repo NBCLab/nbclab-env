@@ -10,6 +10,11 @@ function athena_env()
 source ~/Athena/envs/bash_environment
 }
 
+function nipype_test_env()
+{
+source ~/nipype_test/bash_environment
+}
+
 function leave_env()
 {
 source deactivate
