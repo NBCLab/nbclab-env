@@ -78,7 +78,12 @@ prompt1="\[\e[1;39m\]\u@\h:\W\$\[\e[0m\]"
 PROMPT_COMMAND='PS1="\[\e[1;37m\e[44m\]${project_name}\[\e[0;0m\]${prompt1} "'
 ```
 
+### 9. Download and add MKL license to your home folder
+Nipype and other essential Python modules (e.g. numpy, scipy, scikit-learn) use Continuum Analytics' MKL optimization, which is proprietary and costs money. Fortunately, Continuum provides free academic researchers. Following is the process for obtaining a license and properly adding it to your home directory so you can use MKL-optimized modules.
 
+1. Go to [this website](https://www.continuum.io/anaconda-academic-subscriptions-available) and sign up for an account. Then follow the instructions to download and organize a license.
+2. The only note we want to make here is that, if you're using Safari, the license may download as an HTML document instead of a text document. Simply removing the .html extension will not fix this.
+  - At the moment, the best way we know of to deal with this is to just download the license using a different web browser (Firefox works).
 
 ## Examples
 
