@@ -4,7 +4,7 @@ NBCLab Environment Setup
 Environment Setup
 -----------------
 
-### 1. Get a [Github](https://github.com/) account
+### 1. Get a [GitHub](https://github.com/) account
 
 ### 2. [Set up](https://help.github.com/articles/set-up-git/) Git on HPC
 Perform steps 2-4 in **Setting up Git**.
@@ -23,7 +23,8 @@ or
 cat ~/.ssh/id_rsa.pub
 ```
 
- - Copy the key to your github account settings --> SSH Keys --> add SSH key
+ - Copy the key to your GitHub account settings --> SSH Keys --> add SSH key
+
 ### 4. Modify your ~/.ssh/config file using nano
  1. Test if SSH over the HTTPS port is possible. Run this SSH command:
 
@@ -133,9 +134,9 @@ git push origin master
 ```
 
 - Test and send a pull request to nbclab/nbclab-env for someone else to review and merge your changes.
-
-
-
+  
+  
+  
 ## GIT Tutorials
 Here are some great GIT tutorials:  
 - [NYUCCL](http://nyuccl.org/pages/gittutorial/)  
