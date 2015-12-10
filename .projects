@@ -17,7 +17,7 @@ source ~/nipype_test/bash_environment
 
 function bmvsns_env()
 {
-source /home/data/nbc/bm-vs-ns/bm-vs-ns/env/bash_environment
+source /home/data/nbc/bm-vs-ns/bm-vs-ns/bash_environment
 }
 
 function leave_env()
