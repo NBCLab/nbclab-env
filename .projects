@@ -1,5 +1,10 @@
 #! /bin/bash
 
+function test_env()
+{
+source ~/nbclab-env/bash_environment
+}
+
 function adhd_env()
 {
 source /home/data/nbc/adhd/adhd/bash_environment
