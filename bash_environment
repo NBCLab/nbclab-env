@@ -12,7 +12,7 @@ module add afni/openmp
 source /home/applications/fsl/5.0.7/etc/fslconf/fsl.sh #This will set up my $FSLDIR
 
 # Set up project-specific python environment
-source activate /home/data/nbc/adhd/adhd/env/ADHD
+source activate /home/data/nbc/adhd/adhd/env
 
 # Freesurfer project specific subj dir
 export SUBJECTS_DIR=/home/tsalo006/Desktop/neurosynth/
