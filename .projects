@@ -2,12 +2,12 @@
 
 function adhd_env()
 {
-source /home/data/nbc/adhd/adhd/env/bash_environment
+source /home/data/nbc/adhd/adhd/bash_environment
 }
 
 function athena_env()
 {
-source ~/Athena/env/bash_environment
+source ~/Athena/bash_environment
 }
 
 function nipype_test_env()
