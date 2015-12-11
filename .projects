@@ -1,6 +1,6 @@
 #! /bin/bash
 
-function test_env()
+function example_env()
 {
 source ~/nbclab-env/bash_environment
 }
