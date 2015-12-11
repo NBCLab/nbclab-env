@@ -26,4 +26,4 @@ PATH="${PATH}:/home/applications/freesurfer/bin/"
 export MATLABCMD="$(which matlab)"
 export SPM_PATH=/home/applications/spm12/
 
-export project_name="[ADHD]"
+export project_name="[EXAMPLE]"
