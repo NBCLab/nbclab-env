@@ -15,14 +15,19 @@ function athena_env()
 source ~/Athena/bash_environment
 }
 
-function nipype_test_env()
-{
-source ~/nipype_test/bash_environment
-}
-
 function bmvsns_env()
 {
 source /home/data/nbc/bm-vs-ns/bm-vs-ns/bash_environment
+}
+
+function nbc_env()
+{
+source /home/data/nbc/data-analysis/bash_environment
+}
+
+function nipype_test_env()
+{
+source ~/nipype_test/bash_environment
 }
 
 function leave_env()
