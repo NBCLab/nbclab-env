@@ -30,6 +30,11 @@ function nipype_test_env()
 source ~/nipype_test/bash_environment
 }
 
+function physics_env()
+{
+source /home/data/nbc/physics-learning/bash_environment
+}
+
 function leave_env()
 {
 source deactivate
