@@ -32,7 +32,7 @@ source ~/nipype_test/bash_environment
 
 function physics_env()
 {
-source /home/data/nbc/physics-learning/bash_environment
+source /home/data/nbc/physics-learning/physics-learning/bash_environment
 }
 
 function leave_env()
