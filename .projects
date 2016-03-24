@@ -12,12 +12,17 @@ source /home/data/nbc/adhd/adhd/bash_environment
 
 function athena_env()
 {
-source ~/Athena/bash_environment
+source /home/data/nbc/athena/athena/bash_environment
 }
 
 function bmvsns_env()
 {
 source /home/data/nbc/bm-vs-ns/bm-vs-ns/bash_environment
+}
+
+function ins_env()
+{
+source /home/data/nbc/cbp-insula/cbp-of-human-insula/bash_environment
 }
 
 function nbc_env()
