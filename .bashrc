@@ -24,7 +24,7 @@ alias ls='ls --color -h --group-directories-first'
 alias lab='cd /home/data/nbc/'
 LS_COLORS='fi=93:di=37;1:ln=31;1:*.m=95:*.py=34:*.sh=92'; export LS_COLORS
 
-umask g+w
+umask u=rwx,g=rwx,o=r
 
 prompt1="\[\e[1;39m\]\u@\h:\W\$\[\e[0m\]"
 PROMPT_COMMAND='PS1="\[\e[1;33m\]${project_name}\[\e[0;0m\]${prompt1} "'
