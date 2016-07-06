@@ -20,6 +20,11 @@ function bmvsns_env()
 source /home/data/nbc/bm-vs-ns/bm-vs-ns/bash_environment
 }
 
+function can_env()
+{
+source /home/data/nbc/can/bash_environment
+}
+
 function ins_env()
 {
 source /home/data/nbc/cbp-insula/cbp-of-human-insula/bash_environment
