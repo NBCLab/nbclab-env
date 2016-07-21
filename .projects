@@ -25,6 +25,11 @@ function can_env()
 source /home/data/nbc/can/bash_environment
 }
 
+function hab_env()
+{
+source /home/data/nbc/auburn/high-field-habenula-rsfc/bash_environment
+}
+
 function ins_env()
 {
 source /home/data/nbc/cbp-insula/cbp-of-human-insula/bash_environment
