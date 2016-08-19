@@ -18,6 +18,7 @@ source activate ~/nbclab-env/env
 export SUBJECTS_DIR=/home/tsalo006/Desktop/neurosynth/
 # Set ANTs threading to 1
 export ITK_GLOBAL_DEFAULT_NUMBER_OF_THREADS=1
+export ANTSPATH=/home/applications/ANTs/1.9.4/bin/
 # Set Python path to project-specific folder
 PYTHONPATH="${PYTHONPATH}:~/nbclab-env/"
 PATH="${PATH}:/home/applications/freesurfer/bin/"
