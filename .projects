@@ -15,14 +15,9 @@ function athena_env()
 source /home/data/nbc/athena/athena/bash_environment
 }
 
-function bmvsns_env()
+function nsvsbm_env()
 {
-source /home/data/nbc/bm-vs-ns/bm-vs-ns/bash_environment
-}
-
-function can_env()
-{
-source /home/data/nbc/can/bash_environment
+source /home/data/nbc/ns-vs-bm/ns-vs-bm/bash_environment
 }
 
 function hab_env()
