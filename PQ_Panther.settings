@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings name="parallel" xmlns="urn:mathworks.matlab.settings" xsi:schemaLocation="urn:mathworks.matlab.settings settings.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <settings name="profiles">
+        <settings name="PQ_Panther" visible="true">
+            <key name="Description" visible="true">
+                <string>
+                    <value><![CDATA[PQ_Panther]]></value>
+                </string>
+            </key>
+            <key name="ProjectComponent" visible="true">
+                <string>
+                    <value><![CDATA[LSFProfile1ProjectComponent_Copy]]></value>
+                </string>
+            </key>
+            <key name="SchedulerComponent" visible="true">
+                <string>
+                    <value><![CDATA[LSFProfile1SchedulerComponent_Copy]]></value>
+                </string>
+            </key>
+        </settings>
+    </settings>
+    <settings name="projectcomponents">
+        <settings name="LSFProfile1ProjectComponent_Copy" visible="true">
+            <key name="AdditionalPaths" visible="true">
+                <string minArraySize="0" maxArraySize="0" undef="true">
+                </string>
+            </key>
+            <key name="AttachedFiles" visible="true">
+                <string minArraySize="0" maxArraySize="0" undef="true">
+                </string>
+            </key>
+            <key name="AutoAttachFiles" visible="true" anytype="true">
+            </key>
+            <key name="CaptureDiary" visible="true" anytype="true">
+            </key>
+            <key name="JobFinishedFcn" visible="true" anytype="true">
+            </key>
+            <key name="JobQueuedFcn" visible="true" anytype="true">
+            </key>
+            <key name="JobRunningFcn" visible="true" anytype="true">
+            </key>
+            <key name="JobTimeout" visible="true" anytype="true">
+            </key>
+            <key name="NumWorkersRange" visible="true">
+                <double minArraySize="0" maxArraySize="3">
+                    <value>1.0</value>
+                    <value>8.0</value>
+                    <value>8.0</value>
+                </double>
+            </key>
+            <key name="TaskFinishedFcn" visible="true" anytype="true">
+            </key>
+            <key name="TaskRunningFcn" visible="true" anytype="true">
+            </key>
+            <key name="TaskTimeout" visible="true" anytype="true">
+            </key>
+        </settings>
+    </settings>
+    <settings name="schedulercomponents">
+        <settings name="LSF" visible="true">
+            <settings name="LSFProfile1SchedulerComponent_Copy" visible="true">
+                <key name="ClusterMatlabRoot" visible="true">
+                    <string>
+                        <value><![CDATA[/home/applications/matlab/2013b/mdcs]]></value>
+                    </string>
+                </key>
+                <key name="CommunicatingJobWrapper" visible="true" anytype="true">
+                </key>
+                <key name="HasSharedFilesystem" visible="true">
+                    <bool>
+                        <value>1</value>
+                    </bool>
+                </key>
+                <key name="JobStorageLocation" visible="true">
+                    <string minArraySize="0" maxArraySize="0" undef="true">
+                    </string>
+                </key>
+                <key name="LicenseNumber" visible="true" anytype="true">
+                </key>
+                <key name="NumWorkers" visible="true">
+                    <double>
+                        <value>16.0</value>
+                    </double>
+                </key>
+                <key name="OperatingSystem" visible="true">
+                    <string>
+                        <value><![CDATA[unix]]></value>
+                    </string>
+                </key>
+                <key name="RequiresMathWorksHostedLicensing" visible="true" anytype="true">
+                </key>
+                <key name="SubmitArguments" visible="true">
+                    <string>
+                        <value><![CDATA[-q PQ_nbc -m "IB_16C_96G+2 DELL+1" -oo "out" -eo "err" ]]></value>
+                    </string>
+                </key>
+            </settings>
+        </settings>
+    </settings>
+</settings>

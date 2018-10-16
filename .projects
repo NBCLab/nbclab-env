@@ -5,9 +5,9 @@ function example_env()
 source ~/nbclab-env/bash_environment
 }
 
-function adhd_env()
+function py3_env()
 {
-source /home/data/nbc/adhd/adhd/bash_environment
+source /home/data/nbc/data-analysis/py3_environment
 }
 
 function athena_env()
@@ -23,11 +23,6 @@ source /home/data/nbc/ns-vs-bm/ns-vs-bm/bash_environment
 function hab_env()
 {
 source /home/data/nbc/auburn/habenula/high-field-habenula-rsfc/bash_environment
-}
-
-function ins_env()
-{
-source /home/data/nbc/cbp-insula/cbp-of-human-insula/bash_environment
 }
 
 function nbc_env()
