@@ -47,27 +47,10 @@ Add the following lines:
 > Hostname ssh.github.com  
 > Port 443  
 
-### 5. Fork the [nbclab-env](https://github.com/NBCLab/nbclab-env) repository.
-- In a terminal: 
-
-```bash
-cd place/to/keep/repository
-git clone ssh://git@github.com/nbclab/nbclab-env.git
-cd nbclab-env
-git remote add upstream ssh://git@github.com/nbclab/nbclab-env.git
-```
-
-### 6. Change repo configuration to ssh
-- Open .git/config
-- find url= entry under section [remote "origin"]
-- Change it from url=https://github.com/nbclab/nbclab-env.git
-to ssh://git@github.com/nbclab/nbclab-env.git
-
-
-### 7. Symlink .projects to your home directory
+### 7. Symlink .projects from nbclab-env repo to your home directory
 - In a terminal:
 ```bash
-ln -s /place/of/repository/.projects ~/
+ln -s /home/data/nbc/nbclab-env/.projects ~/
 ```
 
 ### 8. Modify .bashrc to source .projects and show environment name
