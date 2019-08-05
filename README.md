@@ -45,24 +45,24 @@ nano ~/.ssh/config
 Add the following lines:  
 > Host github.com  
 > Hostname ssh.github.com  
-> Port 443  
+> Port 443
 
-### 5. Symlink .projects from nbclab-env repo to your home directory
-- In a terminal:
-```bash
-ln -s /home/data/nbc/nbclab-env/.projects ~/
-```
+You may also see the following line somewhere in the file:
+> UserKnownHostsFile /dev/null
+If you see that line, change `/dev/null` to `~/.ssh/known_hosts`.
+If you don't see that line, add the following line to the file:
+> UserKnownHostsFile ~/.ssh/known_hosts
 
-### 6. Modify .bashrc to source .projects and show environment name
+### 5. Modify .bashrc to source .projects and show environment name
 - Add in:
 ```bash
-source ~/.projects
+source /home/data/nbc/nbclab-env/.projects
 
 prompt1="\[\e[1;39m\]\u@\h:\W\$\[\e[0m\]"
 PROMPT_COMMAND='PS1="\[\e[1;37m\e[44m\]${project_name}\[\e[0;0m\]${prompt1} "'
 ```
 
-### 7. Download and add MKL license to your home folder
+### 6. Download and add MKL license to your home folder
 Nipype and other essential Python modules (e.g. numpy, scipy, scikit-learn) use Continuum Analytics' MKL optimization, which is proprietary and costs money. Fortunately, Continuum provides free academic researchers. Following is the process for obtaining a license and properly adding it to your home directory so you can use MKL-optimized modules.
 
 1. Go to [this website](https://www.continuum.io/anaconda-academic-subscriptions-available) and sign up for an account. Then follow the instructions to download and organize a license.
