@@ -2,12 +2,17 @@
 
 function example_env()
 {
-source ~/nbclab-env/example_environment
+source /home/data/nbc/nbclab-env/example_environment
 }
 
 function py3_env()
 {
-source /home/data/nbc/data-analysis/py3_environment
+source /home/data/nbc/nbclab-env/py3_environment
+}
+
+function nbc_env()
+{
+source /home/data/nbc/nbclab-env/py2_environment
 }
 
 function athena_env()
@@ -18,11 +23,6 @@ source /home/data/nbc/athena/athena/bash_environment
 function hab_env()
 {
 source /home/data/nbc/auburn/habenula/high-field-habenula-rsfc/bash_environment
-}
-
-function nbc_env()
-{
-source /home/data/nbc/data-analysis/bash_environment
 }
 
 function nipype_test_env()
