@@ -15,11 +15,6 @@ function athena_env()
 source /home/data/nbc/athena/athena/bash_environment
 }
 
-function nsvsbm_env()
-{
-source /home/data/nbc/ns-vs-bm/ns-vs-bm/bash_environment
-}
-
 function hab_env()
 {
 source /home/data/nbc/auburn/habenula/high-field-habenula-rsfc/bash_environment
