@@ -16,8 +16,7 @@ fi
 source ~/.projects
 
 # Load common modules
-module load matlab
-module load fsl
+module load slurm
 
 # User specific aliases and functions
 alias ls='ls --color -h --group-directories-first'
