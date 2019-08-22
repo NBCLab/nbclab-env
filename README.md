@@ -4,56 +4,9 @@ NBCLab Environment Setup
 Environment Setup
 -----------------
 
-### 1. Get a [GitHub](https://github.com/) account
+### 1. Follow the instructions [here](https://help.github.com/en/articles/connecting-to-github-with-ssh) to set up git on the HPC
 
-### 2. [Set up](https://help.github.com/articles/set-up-git/) Git on HPC
-Perform steps 2-4 in **Setting up Git**.
-
-### 3. Set up your ssh [key](https://help.github.com/articles/generating-ssh-keys/)!
-- Remember to make your passkey easy to remember (you will be typing it a lot)
-- Follow steps 1 & 2 in 'github:help'.
-
-```bash
-cat ~/.ssh/id_dsa.pub
-```
-
-or
-
-```bash
-cat ~/.ssh/id_rsa.pub
-```
-
- - Copy the key to your GitHub account settings --> SSH Keys --> add SSH key
-
-### 4. Modify your ~/.ssh/config file using nano
- 1. Test if SSH over the HTTPS port is possible. Run this SSH command:
-
-```bash
-ssh -T -p 443 git@ssh.github.com
-```
-
-You should see:
-
-> Hi username! You've successfully authenticated, but GitHub does not provide shell access.
-
-- Enable SSH connections over HTTPS
-
-```bash
-nano ~/.ssh/config
-```
-
-Add the following lines:  
-> Host github.com  
-> Hostname ssh.github.com  
-> Port 443
-
-You may also see the following line somewhere in the file:
-> UserKnownHostsFile /dev/null
-If you see that line, change `/dev/null` to `~/.ssh/known_hosts`.
-If you don't see that line, add the following line to the file:
-> UserKnownHostsFile ~/.ssh/known_hosts
-
-### 5. Modify .bashrc to source .projects and show environment name
+### 2. Modify .bashrc to source .projects and show environment name
 - Add in:
 ```bash
 source /home/data/nbc/nbclab-env/.projects
@@ -62,7 +15,9 @@ prompt1="\[\e[1;39m\]\u@\h:\W\$\[\e[0m\]"
 PROMPT_COMMAND='PS1="\[\e[1;37m\e[44m\]${project_name}\[\e[0;0m\]${prompt1} "'
 ```
 
-### 6. Download and add MKL license to your home folder
+You can use the example bashrc file in this repository to help you modify your own .bashrc file.
+
+### 3. Download and add MKL license to your home folder
 Nipype and other essential Python modules (e.g. numpy, scipy, scikit-learn) use Continuum Analytics' MKL optimization, which is proprietary and costs money. Fortunately, Continuum provides free academic researchers. Following is the process for obtaining a license and properly adding it to your home directory so you can use MKL-optimized modules.
 
 1. Go to [this website](https://www.continuum.io/anaconda-academic-subscriptions-available) and sign up for an account. Then follow the instructions to download and organize a license.
