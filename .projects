@@ -2,7 +2,7 @@
 
 function example_env()
 {
-source ~/nbclab-env/bash_environment
+source ~/nbclab-env/example_environment
 }
 
 function py3_env()
