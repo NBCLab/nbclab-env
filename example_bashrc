@@ -13,7 +13,7 @@ then
 fi
 
 # Project-specific environments
-source ~/.projects
+source /home/data/nbc/nbclab-env/.projects
 
 # Load common modules
 module load slurm
