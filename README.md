@@ -1,12 +1,10 @@
 NBCLab Environment Setup
-======
+========================
 
 Environment Setup
 -----------------
 
-### 1. Follow the instructions [here](https://help.github.com/en/articles/connecting-to-github-with-ssh) to set up git on the HPC
-
-### 2. Modify .bashrc to source .projects and show environment name
+### 1. Modify .bashrc to source nbclab-env .projects file and show environment name
 - Add in:
 ```bash
 source /home/data/nbc/nbclab-env/.projects
@@ -17,7 +15,7 @@ PROMPT_COMMAND='PS1="\[\e[1;37m\e[44m\]${project_name}\[\e[0;0m\]${prompt1} "'
 
 You can use the example bashrc file in this repository to help you modify your own .bashrc file.
 
-### 3. Download and add MKL license to your home folder
+### 2. Download and add MKL license to your home folder
 Nipype and other essential Python modules (e.g. numpy, scipy, scikit-learn) use Continuum Analytics' MKL optimization, which is proprietary and costs money. Fortunately, Continuum provides free academic researchers. Following is the process for obtaining a license and properly adding it to your home directory so you can use MKL-optimized modules.
 
 1. Go to [this website](https://www.continuum.io/anaconda-academic-subscriptions-available) and sign up for an account. Then follow the instructions to download and organize a license.
@@ -26,23 +24,17 @@ Nipype and other essential Python modules (e.g. numpy, scipy, scikit-learn) use 
 
 ## Examples
 
-### 1. Set your project environment to the ADHD project:
+### 1. Set your project environment to the base Python 3 environment:
 
 ```bash
-adhd_env
+py3_env
 ```
 
-You should see your prompt say "[ADHD]". Create a pointer to the nbclab-env repository for the latest project environments:
-
-```bash
-cd /place/of/repository
-git fetch upstream
-git merge upstream/master
-```
+You should see your prompt say "[PY3]".
 
 ### 2. Create a new environment
 
-1. Create environment folder in project folder (e.g. /home/data/nbc/adhd/adhd/**envs**/).
+1. Create environment folder in project folder (e.g., /home/data/nbc/Sutherland_ACE/code/**envs**/).
 2. Copy example bash_environment from nbclab-env folder to project environment folder.
 3. Edit bash_environment with project-specific settings (specify versions of FSL, AFNI, SPM, etc.). Make sure it source activates the right miniconda environment (which you'll set up in the next step).
 4. Copy example generate_miniconda_env.sh to project environment folder.
@@ -52,12 +44,12 @@ git merge upstream/master
 
 ### 3. Add an environment to nbclab-env
 
-- To add an environment to the nbclab-env repository, make a separate environment shell script in the .env (called .my_project_environment in the example) in the nbclab-env repository folder. Then edit the .projects file to add a function:
+- To add an environment to the nbclab-env repository, make a separate environment shell script in the .env (called example_environment in the example) in the nbclab-env repository folder. Then edit the .projects file to add a function:
 
 ```bash
-function my_project_env()
+function example_env()
 {
-source /place/of/project/envs/bash_environment
+source /home/data/nbc/nbclab-env/example_environment
 }
 ```
 
@@ -65,18 +57,10 @@ source /place/of/project/envs/bash_environment
 
 ```bash
 cd /place/of/nbclab-env/repo
-git add .env/.my_project_environment
+git add example_environment
 git add .projects
 git commit -m "added my project's environment"
 git push origin master
 ```
 
-- Test and send a pull request to nbclab/nbclab-env for someone else to review and merge your changes.
-  
-  
-  
-## GIT Tutorials
-Here are some great GIT tutorials:  
-- [NYUCCL](http://nyuccl.org/pages/gittutorial/)  
-- [FPerez](http://nbviewer.ipython.org/github/fperez/reprosw/blob/master/Version%20Control.ipynb)
-- [Codecademy](https://www.codecademy.com/learn) (interactive)
+- Test and send a pull request to NBCLab/nbclab-env for someone else to review and merge your changes.
