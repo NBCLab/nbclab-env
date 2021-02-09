@@ -3,15 +3,15 @@
 
 # Example project environment
 # Set up Nipype, FSL, AFNI, Freesurfer, ANTS, MATLAB
-module add fsl/5.0.7
+module add fsl/5.0.10
 module load ANTs/1.9.4
 module add freesurfer
 module add matlab/2013b/front
 module add mricron/6-2013
-module add miniconda/2.7
+module add miniconda3-4.5.11-gcc-8.2.0-oqs2mbg
 module add afni/openmp
 module load dcm2niix
-source /home/applications/fsl/5.0.7/etc/fslconf/fsl.sh #This will set up my $FSLDIR
+source /home/applications/fsl/5.0.10/etc/fslconf/fsl.sh #This will set up my $FSLDIR
 
 # Set up project-specific python environment
 source activate /home/data/nbc/nbclab-env/env-py3
